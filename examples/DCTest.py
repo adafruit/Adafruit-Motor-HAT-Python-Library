@@ -1,6 +1,5 @@
 #!/usr/bin/python
-#import Adafruit_MotorHAT, Adafruit_DCMotor, Adafruit_Stepper 
-from Adafruit_MotorHAT import Adafruit_MotorHAT, Adafruit_DCMotor, Adafruit_StepperMotor
+from Adafruit_MotorHAT import Adafruit_MotorHAT, Adafruit_DCMotor
 
 import time
 import atexit
@@ -57,6 +56,3 @@ while (True):
 	print "Release"
 	myMotor.run(Adafruit_MotorHAT.RELEASE)
 	time.sleep(1.0)
-
-
-
