@@ -3,7 +3,7 @@ use_setuptools()
 from setuptools import setup, find_packages
 
 setup(name              = 'Adafruit_MotorHAT',
-      version           = '1.2.0',
+      version           = '1.3.0',
       author            = 'Limor Fried',
       author_email      = 'support@adafruit.com',
       description       = 'Library for Adafruit Motor HAT',
