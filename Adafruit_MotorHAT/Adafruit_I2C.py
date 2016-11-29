@@ -134,7 +134,7 @@ class Adafruit_I2C(object):
     "Reads an unsigned 16-bit value from the I2C device"
     try:
       result = self.bus.read_word_data(self.address,reg)
-      # Swap bytes if using big endian because read_word_data assumes little 
+      # Swap bytes if using big endian because read_word_data assumes little
       # endian on ARM (little endian) systems.
       if not little_endian:
         result = ((result << 8) & 0xFF00) + (result >> 8)

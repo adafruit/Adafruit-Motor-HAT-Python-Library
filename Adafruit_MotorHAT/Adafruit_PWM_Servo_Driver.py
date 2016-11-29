@@ -50,7 +50,7 @@ class PWM :
     self.i2c.write8(self.__MODE2, self.__OUTDRV)
     self.i2c.write8(self.__MODE1, self.__ALLCALL)
     time.sleep(0.005)                                       # wait for oscillator
-    
+
     mode1 = self.i2c.readU8(self.__MODE1)
     mode1 = mode1 & ~self.__SLEEP                 # wake up (reset sleep)
     self.i2c.write8(self.__MODE1, mode1)
