@@ -162,7 +162,7 @@ class Adafruit_StepperMotor:
             # this is an edge case, if we are in between full steps, lets just keep going
             # so we end on a full step
             while (lateststep != 0) and (lateststep != self.MICROSTEPS):
-                lateststep = self.oneStep(dir, stepstyle)
+                lateststep = self.oneStep(direction, stepstyle)
                 time.sleep(s_per_s)
 
 class Adafruit_DCMotor:
