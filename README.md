@@ -1,3 +1,7 @@
+# THIS LIBRARY IS DEPRECATED. SEE NEW LIBRARY HERE:
+https://github.com/adafruit/Adafruit_CircuitPython_MotorKit
+
+
 Adafruit Python Library for DC + Stepper Motor HAT
 =======================
 
